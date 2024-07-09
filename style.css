@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  width: 100%;
+  
+  animation: corMudar 25s ease infinite;
+}
+
+.painel {
+  position: relative;
+  background-color: rgb(2, 5, 23);
+  width: 100%;
+
+  margin: auto;
+  max-width: 400px;
+  height: 650px;
+  border-radius: 20px;
+  /* margin-left: -50px; */
+  padding: 20px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+img {
+  display: block;
+}
+h1,
+h2,
+p{
+  color: rgb(255, 255, 255);
+  font-size: 1.2rem;
+}
+
+h2 {
+  margin: 10px 0;
+}
+
+p {
+    margin: 10px 0;
+    font-size: 0.8rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  /* background-color: (254,0,0); */
+  background-color: rgb(255, 255, 255);
+  outline: none;
+  border: 1px solid transparent;
+  font-size: 1.2rem;
+  
+  
+}
+
+#botaoSim {
+    margin-left: -60px;
+  
+}
+
+#botaoNao {
+  position: absolute;
+  margin-left: 10px;
+}
+
+.reproduzir {
+    width: 40%;
+    position: absolute;
+    bottom: 0;
+    background: transparent;
+
+  
+
+}
+
+#reprodutor-play {
+    max-width: 60px;
+}
+
+
+@keyframes corMudar {
+    0% { background-color: #0b3d91; }   /* Azul escuro */
+            10% { background-color: #1d2951; }  /* Azul meia-noite */
+            20% { background-color: #2e0854; }  /* Roxo muito escuro */
+            30% { background-color: #4b0082; }  /* Índigo */
+            40% { background-color: #8b0000; }  /* Vermelho escuro */
+            50% { background-color: #800080; }  /* Roxo */
+            60% { background-color: #191970; }  /* Azul meia-noite */
+            70% { background-color: #000080; }  /* Azul marinho */
+            80% { background-color: #2f4f4f; }  /* Cinza ardósia escuro */
+            90% { background-color: #000000; }  /* Preto (fundo noturno) */
+            100% { background-color: #0b3d91; } /* Azul escuro */
+}
+
