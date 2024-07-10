@@ -18,3 +18,5 @@ function musicaReproduzir() {
   var audio = document.getElementById("meu-audio");
   audio.play();
 }
+
+

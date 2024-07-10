@@ -8,12 +8,20 @@
 body {
   width: 100%;
   
-  animation: corMudar 25s ease infinite;
+  /* animation: corMudar 25s ease infinite; */
+}
+
+video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100vh;
 }
 
 .painel {
   position: relative;
-  background-color: rgb(2, 5, 23);
+  /* background-color: rgb(2, 5, 23); */
   width: 100%;
 
   margin: auto;
@@ -27,13 +35,19 @@ body {
 }
 
 img {
+  width: 80%;
   display: block;
+  margin: 0 auto;
+  border-radius: 20px;
+  
 }
+
+
 h1,
 h2,
 p{
   color: rgb(255, 255, 255);
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 h2 {
@@ -43,6 +57,11 @@ h2 {
 p {
     margin: 10px 0;
     font-size: 0.8rem;
+}
+
+.video {
+  width: 80%;
+  border-radius: 10px;
 }
 
 button {
