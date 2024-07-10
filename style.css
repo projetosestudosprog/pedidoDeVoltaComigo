@@ -31,7 +31,7 @@ video {
   /* margin-left: -50px; */
   padding: 20px;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 
 img {
@@ -44,28 +44,37 @@ img {
 }
 
 #imagem {
-  transition: all 0.5s ease;
+  opacity: 0.7;
+  animation:  10s ease-in-out corBorda brilhoNaImagem infinite;
+  border:  3px solid corBorda brilhoNaImagem ;
+  
+  
+
 }
 
-.imagem-hover {
-  opacity: 1;
-}
 
-.imagem-hover:hover{
-  opacity: 0.5;
-}
+
 
 h1, h2 {
   font-weight: 900;
   margin-bottom: 10px;
 }
 
-p {
-
+.texto-reatar {
+  color: rgb(255, 255, 255);
+  display: block;
+  margin-bottom: 20px;
 }
 
 .texto-reatar {
   font-size: 0.9rem;
+  font-weight: 900;
+}
+
+.texto {
+  display: block;
+  margin: 20px 0;
+  animation:  10s ease-in-out corTexto infinite;
   font-weight: 900;
 }
 
@@ -77,6 +86,12 @@ p{
   color: rgb(255, 255, 255);
   font-size: 1.5rem;
 }
+
+h1.texto-reatacao {
+  padding-top: 20px;
+  font-size: 1.2rem;
+}
+
 
 h2 {
   margin: 10px 0;
@@ -100,12 +115,15 @@ button {
   outline: none;
   border: 1px solid transparent;
   font-size: 1.2rem;
+  font-weight: 400;
   
   
 }
 
 #botaoSim {
     margin-left: -60px;
+    animation: 10s ease-in-out botaoCor infinite;
+    background-color: transparent;
   
 }
 
@@ -117,7 +135,7 @@ button {
 .reproduzir {
     width: 100%;
     position: absolute;
-    bottom: 0;
+    top: 0;
     display: block ;
     color: rgb(255, 255, 255);
     
@@ -132,11 +150,21 @@ button {
     margin: 0 auto;
 }
 
+.final {
+  bottom: 0;
+}
+
 
 .texto-sumir {
   opacity: 0;
   transition: 0.4s ease-in-out;
 
+} 
+
+.animacao-borda {
+  
+  border: 2px solid transparent;
+  animation: corBorda 10s infinite, brilhoNaImagem 10s infinite;
 }
 
 
@@ -154,3 +182,39 @@ button {
             100% { background-color: #0b3d91; } /* Azul escuro */
 }
 
+@keyframes botaoCor {
+  0% { background-color: rgba(72, 61, 139, 0.3); color: rgba(255, 255, 255, 0.5); }   /* Dark Slate Blue */
+  20% { background-color: rgba(123, 104, 238, 0.3); color: rgba(0, 0, 0, 0.5); }    /* Medium Slate Blue */
+  40% { background-color: rgba(148, 0, 211, 0.3); color: rgba(255, 255, 255, 0.5); }/* Dark Violet */
+  60% { background-color: rgba(255, 105, 180, 0.3); color: rgba(0, 0, 0, 0.5); }    /* Hot Pink */
+  80% { background-color: rgba(255, 20, 147, 0.3); color: rgba(255, 255, 255, 0.5); }/* Deep Pink */
+  100% { background-color: rgba(218, 112, 214, 0.3); color: rgba(0, 0, 0, 0.5); }   /* Orchid */
+}
+
+@keyframes corTexto {
+  0% { color: rgba(72, 61, 139, 0.3);  }   /* Dark Slate Blue */
+  20% { color: rgba(123, 104, 238, 0.3); }    /* Medium Slate Blue */
+  40% { color: rgba(148, 0, 211, 0.3);  }/* Dark Violet */
+  60% { color: rgba(255, 105, 180, 0.3); }    /* Hot Pink */
+  80% { color: rgba(255, 20, 147, 0.3);  }/* Deep Pink */
+  100% { color: rgba(218, 112, 214, 0.3);}   /* Orchid */
+}
+
+
+@keyframes corBorda {
+  0% { border-color: rgba(72, 61, 139, 0.3); }   /* Dark Slate Blue */
+  20% { border-color: rgba(123, 104, 238, 0.3); }    /* Medium Slate Blue */
+  40% { border-color: rgba(148, 0, 211, 0.3); }/* Dark Violet */
+  60% { border-color: rgba(255, 105, 180, 0.3); }    /* Hot Pink */
+  80% { border-color: rgba(255, 20, 147, 0.3); }/* Deep Pink */
+  100% { border-color: rgba(218, 112, 214, 0.3); }   /* Orchid */
+}
+
+@keyframes brilhoNaImagem {
+  0% { box-shadow: 0 0 10px rgba(72, 61, 139, 0.5); }   /* Dark Slate Blue */
+  20% { box-shadow: 0 0 10px rgba(123, 104, 238, 0.5); }    /* Medium Slate Blue */
+  40% { box-shadow: 0 0 10px rgba(148, 0, 211, 0.5); }/* Dark Violet */
+  60% { box-shadow: 0 0 10px rgba(255, 105, 180, 0.5); }    /* Hot Pink */
+  80% { box-shadow: 0 0 10px rgba(255, 20, 147, 0.5); }/* Deep Pink */
+  100% { box-shadow: 0 0 10px rgba(218, 112, 214, 0.5); }   /* Orchid */
+}

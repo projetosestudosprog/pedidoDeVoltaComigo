@@ -20,6 +20,7 @@ function musicaReproduzir() {
  
   audio.play();
   texto.style.display = "none"
+ 
 }
 
 

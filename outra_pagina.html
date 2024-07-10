@@ -29,9 +29,15 @@
       button {
         position: absolute;
         bottom: 0;
-        width: 30px;
+        width: 200px;
         background-color: transparent;
         border: 1px solid transparent;
+      
+      font-weight: 900;
+      font-size: 1.1rem;
+      color: rgb(255, 255, 255);
+
+
       }
 
       #carta {
@@ -49,6 +55,8 @@
         text-align: center;
         
       }
+
+
     </style>
   </head>
   <body>
@@ -63,7 +71,29 @@
         oportunidade para demonstrar que não vou quebrar sua confiança.
       </p>
 
-      <button onclick="trocarTexto()"><img src="play.png" alt="" /></button>
+      <button class="reproduzir" onclick="musicaReproduzir()">
+        <audio autoplay loop id="meu-audio">
+            <source src="/maneskin2.mp3" type="audio/mpeg" />
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+
+        <span class="texto">Clique aqui primeiro</span>
+
+        
+    </button>
     </section>
   </body>
+
+
+  <script>
+
+    function musicaReproduzir() {
+      var audio = document.getElementById("meu-audio");
+      let texto = document.querySelector(".texto")
+     
+      audio.play();
+      texto.style.display = "none"
+     
+    }
+  </script>
 </html>
