@@ -16,5 +16,20 @@ function botaoFuja() {
 
 function musicaReproduzir() {
   var audio = document.getElementById("meu-audio");
+  let texto = document.querySelector(".texto")
+ 
   audio.play();
+  texto.style.display = "none"
 }
+
+
+function trocarImagem() {
+  document.getElementById("imagem").src = "ela.jpg"
+
+}
+
+function restaurarImagem() {
+  document.getElementById("imagem").src = "casal-espaco-universo1.jpeg"
+}
+
+

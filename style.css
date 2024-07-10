@@ -2,18 +2,26 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
   width: 100%;
   
-  animation: corMudar 25s ease infinite;
+  /* animation: corMudar 25s ease infinite; */
+}
+
+video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100vh;
 }
 
 .painel {
   position: relative;
-  background-color: rgb(2, 5, 23);
+  /* background-color: rgb(2, 5, 23); */
   width: 100%;
 
   margin: auto;
@@ -27,13 +35,47 @@ body {
 }
 
 img {
+  width: 80%;
   display: block;
+  margin: 0 auto;
+  border-radius: 20px;
+  
+  
 }
+
+#imagem {
+  transition: all 0.5s ease;
+}
+
+.imagem-hover {
+  opacity: 1;
+}
+
+.imagem-hover:hover{
+  opacity: 0.5;
+}
+
+h1, h2 {
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+p {
+
+}
+
+.texto-reatar {
+  font-size: 0.9rem;
+  font-weight: 900;
+}
+
+
+
 h1,
 h2,
 p{
   color: rgb(255, 255, 255);
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 h2 {
@@ -45,10 +87,15 @@ p {
     font-size: 0.8rem;
 }
 
+.video {
+  width: 80%;
+  border-radius: 10px;
+}
+
 button {
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
-  /* background-color: (254,0,0); */
+  background-color: (254,0,0);
   background-color: rgb(255, 255, 255);
   outline: none;
   border: 1px solid transparent;
@@ -68,9 +115,12 @@ button {
 }
 
 .reproduzir {
-    width: 40%;
+    width: 100%;
     position: absolute;
     bottom: 0;
+    display: block ;
+    color: rgb(255, 255, 255);
+    
     background: transparent;
 
   
@@ -79,6 +129,14 @@ button {
 
 #reprodutor-play {
     max-width: 60px;
+    margin: 0 auto;
+}
+
+
+.texto-sumir {
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+
 }
 
 
