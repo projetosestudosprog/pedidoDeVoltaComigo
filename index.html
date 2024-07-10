@@ -1,49 +1,66 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Aceita começa do zero</title>
-</head>
-<body>
-
-    <video  autoplay muted loop src="espaco-video.mp4"></video>
+  </head>
+  <body>
+    <video autoplay muted loop src="espaco-video.mp4"></video>
 
     <main class="painel">
+      <h1>Aceita reatar comigo?</h1>
 
-        <h1>Prometo cumprir todas as minhas promessas</h1>
+      <img
+        src="casal-espaco-universo1.jpeg"
+        alt=""
+        id="imagem"
+        onmouseover="trocarImagem()"
+        onmouseout="restaurarImagem()"
+        class="imagem-hover"
+      />
 
-        <img src="casal-espaco-universo1.jpeg" alt="" id="imagem">
+      <p class="texto-reatar">Peço desculpas por qualquer medo ou desconforto que causei. Prometo te amar, respeitar, e cuida</p>
 
 
-        <h2>Aceita reatar comigo?</h2>
 
-        <p>Quero te mostrar que eu sou verdadeiro em mudanças </p>
+      <button
+        onclick="window.location.href = 'outra_pagina.html'"
+        id="botaoSim"
+      >
+        Sim
+      </button>
 
-        <button onclick="window.location.href = 'outra_pagina.html'" id="botaoSim">Sim</button>
+      <button onmouseover="botaoFuja()" id="botaoNao">Não
 
-
-        <button  onmouseover="botaoFuja()" id="botaoNao">Não</button>
-
+      </button>
 
         
-   
-
-
-
-
+      
     </main>
 
-    <audio autoplay loop id="meu-audio">
-        <source src="OASIS - stop.mp3" type="audio/mpeg">
-        Seu navegador não suporta o elemento de áudio.
-      </audio>
+    <button class="reproduzir" onclick="musicaReproduzir()">
+        <audio autoplay loop id="meu-audio">
+            <source src="maneskin.mp3" type="audio/mpeg" />
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
 
-      <button class="reproduzir" onclick="musicaReproduzir()">
-        <img id="reprodutor-play" src="play.png" alt=""></button>
+        <span class="texto">Clique aqui primeiro</span>
+
+        
+    </button>
+
     
-</body>
 
-<script src="script.js"></script>
+    
+  </body>
+
+  <script src="script.js"></script>
 </html>
