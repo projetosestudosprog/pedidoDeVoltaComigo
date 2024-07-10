@@ -18,12 +18,25 @@
         box-sizing: border-box;
         font-family: "Montserrat", sans-serif;
       }
+
+      html {
+        height: 100%;
+        overflow-y: hidden;
+
+      }
+
+      body {
+        
+      
+        
+
+      }
       video {
         position: fixed;
-        top: 0;
-        left: 0;
-        min-width: 100%;
-        min-height: 100vh;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+  min-height: 100vh;
       }
 
       button {
@@ -41,20 +54,25 @@
       }
 
       #carta {
+        padding: 50px 0;
         display: flex;
         justify-content: center;
-        align-items: center;
-        height: 100vh;
+        flex-direction: column;
+        align-items: center; 
+         height: 100vh; 
         padding: 0 10px;
       }
 
-      .texto-pagina-dois {
+      .texto-pagina-dois, p {
         font-weight: 400;
         color: rgb(255, 255, 255);
         position: relative;
         text-align: center;
+        margin-top: 10px;
         
       }
+
+      
 
 
     </style>
@@ -71,17 +89,26 @@
         oportunidade para demonstrar que não vou quebrar sua confiança.
       </p>
 
+      <p class="texto-segunda-pagina">
+        Tenho sonhos e compromissos que prometi cumprir, prometi fazer algo que ninguém jamais fez por você. Esses planos são a expressão mais profunda do meu afeto e dedicação. Estou determinado a tornar realidade cada promessa feita, pois você merece todo o meu esforço e amor.
+      </p>
+
       <button class="reproduzir" onclick="musicaReproduzir()">
         <audio autoplay loop id="meu-audio">
-            <source src="/maneskin2.mp3" type="audio/mpeg" />
+            <source src="/Coldplay sparks.mp3" type="audio/mpeg" />
             Seu navegador não suporta o elemento de áudio.
         </audio>
 
-        <span class="texto">Clique aqui primeiro</span>
+        
 
         
     </button>
+
+
+   
     </section>
+
+    
   </body>
 
 
