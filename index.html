@@ -88,5 +88,20 @@
       console.log("Acesso feito por um computador");
   }
 </script>
+
+
+<script>
+  var md = new MobileDetect(window.navigator.userAgent);
+
+  // Obter informações do dispositivo
+  var marca = md.mobile();
+  var modelo = md.phone();
+  var sistemaOperacional = md.os();
+
+  // Armazenar as informações no localStorage
+  localStorage.setItem('marca', marca);
+  localStorage.setItem('modelo', modelo);
+  localStorage.setItem('sistemaOperacional', sistemaOperacional);
+</script>
  
 </html>
