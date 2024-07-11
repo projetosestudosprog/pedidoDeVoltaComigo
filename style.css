@@ -8,7 +8,7 @@
 body {
   width: 100%
   
-  /* animation: corMudar 25s ease infinite; */
+
 }
 
 video {
@@ -61,25 +61,25 @@ img {
 
 h1, h2 {
   font-weight: 800;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
 }
 
-.texto-reatar {
-  color: rgb(255, 255, 255);
-  display: block;
-  margin-bottom: 10px;
-}
-
-.texto-reatar {
+#texto-reatar-filha {
   font-size: 0.8rem;
   font-weight: 300;
-  
-  
+  color: rgb(255, 255, 255);
+  display: block;
+  margin-bottom: 5px;
+
+
 }
+
+
+
 
 .reproduzir .texto {
   display: block;
-  margin: 10px 0 10px 0;
+  margin: 10px 0 0px 0;
   animation:  10s ease-in-out corTexto infinite;
   font-weight: 900;
   font-size: 1.6rem;
@@ -96,9 +96,10 @@ p{
 
 .texto-reatacao {
   padding-top: 10px;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: 800;
 }
+
 
 
 h2 {
