@@ -12,6 +12,12 @@ function botaoFuja() {
 
   botaoNaoFuja.style.left = aleatorioLargura + "px";
   botaoNaoFuja.style.top = aleatorioAltura + "px";
+  alert(`
+  CLIQUE NA FOTO E DEPOIS EM SIM E VEJA 
+  AS SURPRESA QUE FIZ A VOCE
+  DEIXE A TELA NA VERTICAL
+  `)
+
 }
 
 function musicaReproduzir() {

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>A minha promessa será cumprida</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Montserrat", sans-serif;
+      }
+
+      html {
+        height: 100%;
+        overflow-y: hidden;
+      }
+
+      body {
+      }
+      video {
+        position: fixed;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        height: 100vh;
+        margin: 0 auto;
+      }
+
+      button {
+        position: absolute;
+        bottom: 0;
+        width: 200px;
+        background-color: transparent;
+        border: 1px solid transparent;
+
+        font-weight: 900;
+        font-size: 1.1rem;
+        color: rgb(255, 255, 255);
+      }
+
+      #carta {
+        padding: 50px 0;
+        display: flex;
+        /* justify-content: center; */
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        padding: 0 10px;
+      }
+
+      .texto-pagina-dois,
+      p, .amor-verdadeiro-texto{
+        font-weight: 600;
+        color: #fff;
+        position: relative;
+        text-align: center;
+        margin-top: 60px;
+
+      }
+
+      .amor-verdadeiro-texto {
+        font-weight: 900;
+        
+      }
+
+      .botao-proximo {
+        width: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <video autoplay muted loop src="espaco-pagina-dois.mp4"></video>
+    <section id="carta">
+      <p class="texto-pagina-dois">
+        Obrigado por me dar essa chance.
+        Peço desculpas pelas mensagens que enviei após o término e por postar stories direcionados a você. Eu estava nervoso e ansioso, e minhas ações podem ter parecido possessivas. Sobre o Instagram, eu estava tentando excluir minha conta e, ao remover todos, o sistema não aceitou e acabou parecendo algo fora do normal. Nunca foi minha intenção te assustar. Só queria tentar conversar e resolver as coisas. Prometo ser mais cuidadoso e respeitar seu espaço daqui para frente.
+      </p>
+
+
+      <span class="amor-verdadeiro-texto">❤️ 💞</span>
+
+      
+
+      <button class="reproduzir" onclick="musicaReproduzir()">
+        <audio autoplay loop id="meu-audio">
+          <source src="/Coldplay sparks.mp3" type="audio/mpeg" />
+          Seu navegador não suporta o elemento de áudio.
+        </audio>
+      </button>
+
+
+      <button onclick="window.location.href = 'pagina-final.html'"><img class="botao-proximo" src="proximo.png" alt=""></button>
+    </section>
+  </body>
+
+  <script>
+    function musicaReproduzir() {
+      var audio = document.getElementById("meu-audio");
+      let texto = document.querySelector(".texto");
+
+      audio.play();
+      texto.style.display = "none";
+    }
+
+    
+  </script>
+</html>

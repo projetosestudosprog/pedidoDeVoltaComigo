@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>video</title>
+</head>
+
+<style>
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        outline: none;
+    }
+    
+
+    body {
+        width: 100%;
+        display: flex;
+        
+        align-items: center;
+        flex-direction: column;
+        background-image: url("casal-espaco-universo2.jpeg");
+        
+    }
+    video {
+        width: 90%;
+
+        border-radius: 20px;
+        margin: 10px 0;
+    }
+
+    button{
+        background-color: transparent;
+        border: 1px solid transparent;
+    }
+</style>
+<body>
+
+    <video autoplay  loop  src="video-surpresa.mp4"></video>
+
+    <button onclick="window.location.href = 'pagina-explicacao.html'"><img class="botao-proximo" src="proximo.png" alt=""></button>
+    
+</body>
+</html>

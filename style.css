@@ -63,19 +63,20 @@ h1, h2 {
 .texto-reatar {
   color: rgb(255, 255, 255);
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .texto-reatar {
-  font-size: 0.9rem;
-  font-weight: 900;
+  font-size: 0.8rem;
+  font-weight: 800;
 }
 
-.texto {
+.reproduzir .texto {
   display: block;
-  margin: 20px 0;
+  margin: 10px 0 10px 0;
   animation:  10s ease-in-out corTexto infinite;
   font-weight: 900;
+  font-size: 1.7rem;
 }
 
 
@@ -160,6 +161,8 @@ button {
   transition: 0.4s ease-in-out;
 
 } 
+
+
 
 .animacao-borda {
   
