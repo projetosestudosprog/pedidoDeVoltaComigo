@@ -48,7 +48,6 @@
         color: rgb(255, 255, 255);
       }
 
-      
       #carta {
         padding: 50px 0;
         display: flex;
@@ -83,53 +82,51 @@
       }
 
       .animacao-borda {
-  border: 2px solid transparent;
-  animation: corBorda 10s infinite, brilhoNaImagem 10s infinite;
-}
+        border: 2px solid transparent;
+        animation: corBorda 10s infinite, brilhoNaImagem 10s infinite;
+      }
 
+      @keyframes corBorda {
+        0% {
+          border-color: rgba(72, 61, 139, 0.3);
+        } /* Dark Slate Blue */
+        20% {
+          border-color: rgba(123, 104, 238, 0.3);
+        } /* Medium Slate Blue */
+        40% {
+          border-color: rgba(148, 0, 211, 0.3);
+        } /* Dark Violet */
+        60% {
+          border-color: rgba(255, 105, 180, 0.3);
+        } /* Hot Pink */
+        80% {
+          border-color: rgba(255, 20, 147, 0.3);
+        } /* Deep Pink */
+        100% {
+          border-color: rgba(218, 112, 214, 0.3);
+        } /* Orchid */
+      }
 
-@keyframes corBorda {
-  0% {
-    border-color: rgba(72, 61, 139, 0.3);
-  } /* Dark Slate Blue */
-  20% {
-    border-color: rgba(123, 104, 238, 0.3);
-  } /* Medium Slate Blue */
-  40% {
-    border-color: rgba(148, 0, 211, 0.3);
-  } /* Dark Violet */
-  60% {
-    border-color: rgba(255, 105, 180, 0.3);
-  } /* Hot Pink */
-  80% {
-    border-color: rgba(255, 20, 147, 0.3);
-  } /* Deep Pink */
-  100% {
-    border-color: rgba(218, 112, 214, 0.3);
-  } /* Orchid */
-}
-
-@keyframes brilhoNaImagem {
-  0% {
-    box-shadow: 0 0 10px rgba(72, 61, 139, 0.5);
-  } /* Dark Slate Blue */
-  20% {
-    box-shadow: 0 0 10px rgba(123, 104, 238, 0.5);
-  } /* Medium Slate Blue */
-  40% {
-    box-shadow: 0 0 10px rgba(148, 0, 211, 0.5);
-  } /* Dark Violet */
-  60% {
-    box-shadow: 0 0 10px rgba(255, 105, 180, 0.5);
-  } /* Hot Pink */
-  80% {
-    box-shadow: 0 0 10px rgba(255, 20, 147, 0.5);
-  } /* Deep Pink */
-  100% {
-    box-shadow: 0 0 10px rgba(218, 112, 214, 0.5);
-  } /* Orchid */
-}
-
+      @keyframes brilhoNaImagem {
+        0% {
+          box-shadow: 0 0 10px rgba(72, 61, 139, 0.5);
+        } /* Dark Slate Blue */
+        20% {
+          box-shadow: 0 0 10px rgba(123, 104, 238, 0.5);
+        } /* Medium Slate Blue */
+        40% {
+          box-shadow: 0 0 10px rgba(148, 0, 211, 0.5);
+        } /* Dark Violet */
+        60% {
+          box-shadow: 0 0 10px rgba(255, 105, 180, 0.5);
+        } /* Hot Pink */
+        80% {
+          box-shadow: 0 0 10px rgba(255, 20, 147, 0.5);
+        } /* Deep Pink */
+        100% {
+          box-shadow: 0 0 10px rgba(218, 112, 214, 0.5);
+        } /* Orchid */
+      }
     </style>
   </head>
   <body>
