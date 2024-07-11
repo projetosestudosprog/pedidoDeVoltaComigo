@@ -7,6 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap" rel="stylesheet">
+<script src="mobile-detect.js"></script>
+
 
     <title>Aceita começa do zero</title>
   </head>
@@ -65,4 +67,26 @@
   </body>
 
   <script src="script.js"></script>
+
+  <script>
+    var md = new MobileDetect(window.navigator.userAgent);
+    
+    console.log("Marca do dispositivo: " + md.mobile());
+    console.log("Modelo do dispositivo: " + md.phone());
+    console.log("Sistema Operacional: " + md.os());
+    console.log("Tipo de dispositivo: " + md.mobileGrade());
+    console.log("Informações completas: " + md.userAgent());
+</script>
+
+<script>
+  // Verificar se o acesso é feito por um dispositivo móvel
+  const isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
+
+  if (isMobile) {
+      console.log("Acesso feito por um dispositivo móvel");
+  } else {
+      console.log("Acesso feito por um computador");
+  }
+</script>
+ 
 </html>
