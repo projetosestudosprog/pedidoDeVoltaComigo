@@ -23,9 +23,11 @@ function botaoFuja() {
 function musicaReproduzir() {
   var audio = document.getElementById("meu-audio");
   let texto = document.querySelector(".texto")
+  
  
   audio.play();
   texto.style.display = "none"
+ 
  
 }
 

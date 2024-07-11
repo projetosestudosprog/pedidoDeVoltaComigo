@@ -2,11 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 body {
-  width: 100%;
+  width: 100%
   
   /* animation: corMudar 25s ease infinite; */
 }
@@ -21,8 +21,9 @@ video {
 
 .painel {
   position: relative;
-  /* background-color: rgb(2, 5, 23); */
+
   width: 100%;
+  height: 90%;
 
   margin: auto;
   max-width: 400px;
@@ -36,6 +37,7 @@ video {
 
 img {
   width: 80%;
+  
   display: block;
   margin: 0 auto;
   border-radius: 20px;
@@ -56,19 +58,21 @@ img {
 
 
 h1, h2 {
-  font-weight: 900;
-  margin-bottom: 10px;
+  font-weight: 800;
+  margin-bottom: 5px;
 }
 
 .texto-reatar {
   color: rgb(255, 255, 255);
   display: block;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .texto-reatar {
   font-size: 0.8rem;
   font-weight: 800;
+  
+  
 }
 
 .reproduzir .texto {
@@ -76,7 +80,7 @@ h1, h2 {
   margin: 10px 0 10px 0;
   animation:  10s ease-in-out corTexto infinite;
   font-weight: 900;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
 }
 
 
@@ -88,9 +92,10 @@ p{
   font-size: 1.5rem;
 }
 
-h1.texto-reatacao {
-  padding-top: 20px;
-  font-size: 1.2rem;
+.texto-reatacao {
+  padding-top: 10px;
+  font-size: 1.3rem;
+  font-weight: 800;
 }
 
 
@@ -115,7 +120,7 @@ button {
   background-color: rgb(255, 255, 255);
   outline: none;
   border: 1px solid transparent;
-  font-size: 1.2rem;
+  font-size: 1.111rem;
   font-weight: 400;
   
   
