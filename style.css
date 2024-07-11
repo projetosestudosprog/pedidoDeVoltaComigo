@@ -42,7 +42,7 @@ img {
 }
 
 #imagem {
-  opacity: 06;
+  opacity: 0.6;
   animation: 10s ease-in-out corBorda brilhoNaImagem infinite;
   border: 2px solid corBorda;
 }
