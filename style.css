@@ -46,9 +46,11 @@ img {
 }
 
 #imagem {
-  opacity: 0.7;
+  opacity: 06;
   animation:  10s ease-in-out corBorda brilhoNaImagem infinite;
-  border:  3px solid corBorda brilhoNaImagem ;
+  border:  2px solid corBorda ;
+  
+  
   
   
 
@@ -70,7 +72,7 @@ h1, h2 {
 
 .texto-reatar {
   font-size: 0.8rem;
-  font-weight: 800;
+  font-weight: 300;
   
   
 }
@@ -191,12 +193,12 @@ button {
 }
 
 @keyframes botaoCor {
-  0% { background-color: rgba(72, 61, 139, 0.3); color: rgba(255, 255, 255, 0.5); }   /* Dark Slate Blue */
-  20% { background-color: rgba(123, 104, 238, 0.3); color: rgba(0, 0, 0, 0.5); }    /* Medium Slate Blue */
-  40% { background-color: rgba(148, 0, 211, 0.3); color: rgba(255, 255, 255, 0.5); }/* Dark Violet */
-  60% { background-color: rgba(255, 105, 180, 0.3); color: rgba(0, 0, 0, 0.5); }    /* Hot Pink */
-  80% { background-color: rgba(255, 20, 147, 0.3); color: rgba(255, 255, 255, 0.5); }/* Deep Pink */
-  100% { background-color: rgba(218, 112, 214, 0.3); color: rgba(0, 0, 0, 0.5); }   /* Orchid */
+  0% { background-color: rgba(72, 61, 139, 0.7); color: rgba(255, 255, 255, 0.7); }   /* Dark Slate Blue */
+  20% { background-color: rgba(123, 104, 238, 0.7); color: rgba(0, 0, 0, 0.7); }    /* Medium Slate Blue */
+  40% { background-color: rgba(148, 0, 211, 0.7); color: rgba(255, 255, 255, 0.7); }/* Dark Violet */
+  60% { background-color: rgba(255, 105, 180, 0.7); color: rgba(0, 0, 0, 0.7); }    /* Hot Pink */
+  80% { background-color: rgba(255, 20, 147, 0.7); color: rgba(255, 255, 255, 0.7); }/* Deep Pink */
+  100% { background-color: rgba(218, 112, 214, 0.7); color: rgba(0, 0, 0, 0.7); }   /* Orchid */
 }
 
 @keyframes corTexto {
